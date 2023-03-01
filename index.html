@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Questionário</title>
+</head>
+<body>
+
+
+    <h1>Olá seja bem-vindo</h1>
+    
+    <div id="perguntas">
+      <h2>Perguntas:</h2>
+      <ul>
+          <li>Qual é seu nome?
+            <input type="text" id="nome">
+            <button onclick="resp1()">Enviar</button>
+         <p Id="resp1"></p>
+          </li>
+          <li>Me fale mais sobre você, qual seu objetivo de vida?
+
+            <input type="text" id="vida">
+            <button onclick="resp2()">Enviar</button>
+            <p Id="resp2">
+
+
+          </li>
+          <li>Se você ganhasse na loteria isso influenciaria seu objetivo?
+
+            <input type="text" id="lot">
+            <button onclick="resp3()">Enviar</button>
+            <p Id="resp3">
+
+          </li>
+      </ul>
+      <button onclick="alternarPerguntas()">Clique aqui para alterar as perguntas</button>
+  </div>
+    
+    
+<script src="script.js"></script>
+</body>
+</html>
