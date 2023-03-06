@@ -26,6 +26,37 @@ function resp3() {
 
 }
 
+function resp4() {
+
+    var fruta = document.getElementById("fruta").value;
+
+    var resp4 = "Eu como bot infelizmente não possso comer maçãs ;("
+
+    var resp5 ="Que pena você não gostar de maçã"
+
+    var resp6 ="Não entendi sua resposta, poderia repetir?"
+
+    if (fruta == "S"||fruta == "s" || fruta == "sim" || fruta == "Sim"){
+
+        document.getElementById("resp4").innerHTML = resp4;
+
+    } else if (fruta == "N"|| fruta == "n" || fruta == "não"|| fruta == "Não") {
+
+        document.getElementById("resp4").innerHTML = resp5;
+       
+      
+        
+
+    } else {
+
+        document.getElementById("resp4").innerHTML = resp6;
+
+    }
+
+}
+
+
+
 function alternarPerguntas() {
     var perguntas = document.getElementById("perguntas").getElementsByTagName("li");
     var numPerguntas = perguntas.length;
@@ -41,3 +72,5 @@ function alternarPerguntas() {
     // Exibe a próxima pergunta selecionada aleatoriamente
     perguntas[proxPerguntaIndex].style.display = "block";
 }
+
+
